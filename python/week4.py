@@ -420,20 +420,65 @@
 #
 # print (
 
+#
+# def astrerisks_show (int_number):
+#     if int_number >= 3:
+#         s = '*'
+#         ss = '*'
+#         c=0
+#         for d in range(0,int_number):
+#             print (s)
+#             s += '*'
+#             c += 1
+#         for a in range(1,int_number):
+# 	        c=c-1
+# 	        print(ss * c)
+#
+#     else:
+#         return False
+#
+# user_input = int(input("plese enter an integer number :"))
+# astrerisks_show(user_input)
 
-def astrerisks_show (int_number):
-    if int_number >= 3:
-        s = '*'
-        c=0
-        for d in range(1,(int_number*2)-1):
-            print (s)
-            s += '*'
-            c += 1
-            if int_number == c:
+#
+# n = int(input("Please enter an integer: "))
+# for x in range(1, n+1):
+# 	print("*" * x)
+# 	print("*" * y)
+# # for y in range(n-1, 0, -1):
 
-                print (s)
 
-    else:
-        return False
+# Quiz 3, Part 4
+# Write a function that accepts a list of integers as parameter. Your function should return the sum of all the odd numbers in the list.
+# If there are no odd numbers in the list, your function should return 0 as the sum.
+#
+# Remember that you are not asked to print anything. So, your function should just return the sum of all the odd numbers in the list.
+#  You do not need to call your function, it will automatically be called and tested for correctness with the test cases we provide.
+#  You only need to write one function and we will test your program with the first function that appears in your code.
+#  So, if you want to write more than one function to help you solve the problem, remember to embed the helper functions inside the first function.
 
-astrerisks_show(3)
+# def _sum_odd_numbers(in_list):
+#
+# 	def _calc_odd(_list):
+# 		sum_odd=0
+# 		for a in _list :
+# 			if a%2 != 0 :
+# 				sum_odd += a
+# 		return sum_odd
+# 	return _calc_odd(in_list)
+# print (_sum_odd_numbers([12,10,4,6,8,14]))
+
+def _perfect_number(int_a):
+	def _perfect (n):
+		sum_n=0
+		for a in range(n-1,0,-1):
+			if n % a == 0 :
+				sum_n += a
+			else :
+				continue
+		return sum_n
+	if _eprfect(int_a)==int_a:
+		return True
+	else :
+		return False
+_perfect_number(7)
