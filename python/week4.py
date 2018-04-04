@@ -25,7 +25,6 @@
 # print(week_days[users_input-1])
 
 
-
 # sample_list = [2, 10, 3, 5]
 # avg=((sample_list[0]+sample_list[1]+sample_list[2]+sample_list[3])/4)
 # print(avg)
@@ -117,7 +116,6 @@
 #     print (d,"days",h,"hours",m,"minutes",s,"seconds")
 # else :
 #     print (d,"days",h,"hours",m,"minutes",s,"seconds")
-
 
 
 # Write a program which prints the sum of numbers from 1 to 101 that are divisible by 5. ( 1 and 101 are included) (Use while loop)
@@ -292,10 +290,7 @@
 # print (_calculate_balance(1000.0,10,4,21))
 
 
-
-
 # Your function for calculating payment goes here
-
 
 
 # def payment_month(principal, annual_interest_rate, duration_year):
@@ -468,17 +463,80 @@
 # 	return _calc_odd(in_list)
 # print (_sum_odd_numbers([12,10,4,6,8,14]))
 
-def _perfect_number(int_a):
-	def _perfect (n):
-		sum_n=0
-		for a in range(n-1,0,-1):
-			if n % a == 0 :
-				sum_n += a
-			else :
-				continue
-		return sum_n
-	if _eprfect(int_a)==int_a:
-		return True
-	else :
-		return False
-_perfect_number(7)
+# def _perfect_number(int_a):
+# 	def _perfect (n):
+# 		sum_n=0
+# 		for a in range(n-1,0,-1):
+# 			if n % a == 0 :
+# 				sum_n += a
+# 			else :
+# 				continue
+# 		return sum_n
+# 	if _eprfect(int_a)==int_a:
+# 		return True
+# 	else :
+# 		return False
+# _perfect_number(7)
+
+# 7 head and 12 leg
+# 1          4
+# 6          12
+# 5          12
+# 4          1
+#
+#
+# ch + dog = 5
+# 2ch+ 4dog = 12
+#################
+#   2ch + 2dog = 10
+# - 2ch + 4dog = 12
+# --------------------
+# 2 dog = 2 => dog = 1
+# 2 ch + 2 = 10
+# => 2ch = 8 => ch = 8/2 = 4
+#
+# def _f(h, l):
+# 	ch = 0
+# 	dog = 0
+# 	'''
+# 	ch + dog = h
+# 	2ch + 4 dog = L
+# 	----------------
+# 	2ch + 2 dog = 2h
+# 	-2ch - 4 dog = -l
+# 	------------------
+# 	-2 dog = 2h - L
+# 	dog = 2h/-2 + L/2
+# 	dog = -5 + 6 => dog = 1
+#
+# 		dog = L/2 - h
+#
+# 	2ch + 2 dog = 2h
+# 	2ch + L - 2h = 2h
+# 	2ch = 2h -L + 2h
+# 	2ch = 4h -L
+# 		ch = 2h - l/2
+#     '''
+# 	dog = l / 2 - h
+# 	ch = 2 * h - l / 2
+# 	if ch <=0 or dog <= 0  :
+# 		return None
+# 	if int(ch) + int(dog) != h :
+# 		return None
+# 	return [int(ch), int(dog)]
+#
+#
+# print(_f(9, 23))
+#
+#
+# def _sample_fun_puzzle_ (heads,legs):
+# 	dogs=(legs-heads*2)/2
+# 	if dogs<0 or dogs%1:
+# 		return None
+# 	dogs=int(dogs)
+# 	chickens=heads-dogs
+# 	if chickens< 0:
+# 		return None
+# 	return [chickens,dogs]
+
+
